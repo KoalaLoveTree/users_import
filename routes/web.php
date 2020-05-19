@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/users/create', 'ImportUsersController@create');
 Route::post('/users/import', 'ImportUsersController@store');
+Route::get('/users/statistics', 'UsersStatisticsController@index');
