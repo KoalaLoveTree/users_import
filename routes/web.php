@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/users/create', 'ImportUsersController@create');
+Route::post('/users/import', 'ImportUsersController@store');
